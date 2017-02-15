@@ -1,0 +1,43 @@
+/*css初始化*/
+html,body{
+    width: 100%;
+
+}
+
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dd, dt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+input, img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    vertical-align: bottom;
+    outline-style: none;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+
+}
+
+.clearfix:after {
+    height: 0;
+    line-height: 0;
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}

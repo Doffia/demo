@@ -1,0 +1,673 @@
+/*顶部导航*/
+
+.top-nav {
+    /*width: 100%;*/
+    padding-right: 35px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #f2f2f2;
+    border-bottom:1px solid #e5e5e5;
+    margin: 0 auto;
+}
+
+.top-nav .login-info{
+    float: left;
+    color: #999;
+}
+
+.top-nav .login-info a{
+    padding: 0px 10px;
+}
+.top-nav a:hover {
+    color:#c40000;
+}
+
+.top-nav .quick-menu{
+    float:right;
+    /*margin-right: 35px;*/
+}
+
+.top-nav .quick-menu li {
+    float: left;
+    padding: 0px 15px;
+    position: relative;
+}
+.top-nav .quick-menu li i{
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    left:0px;
+    top:10px;
+}
+.top-nav .quick-menu li:nth-child(2) i{
+    background: url("../imges/love1.png") no-repeat;
+    background-size: contain;
+}
+
+.top-nav .quick-menu li:nth-child(3) i{
+    background: url("../imges/cart_fill.png") no-repeat;
+    background-size: contain;
+
+}
+
+.top-nav .quick-menu li:nth-child(5) i{
+    background: url("../imges/mobile.png") no-repeat;
+    background-size: contain;
+}
+
+.top-nav .quick-menu li:last-child i{
+    background: url("../imges/prolist.png") no-repeat;
+    background-size: contain;
+}
+
+.top-nav .quick-menu .seperator {
+    width: 1px;
+    height: 14px;
+    display: block;
+    background-color: #ccc;
+    float: left;
+    margin:  9px 2px;
+}
+
+
+/*hover时显示的盒子*/
+.top-nav .quick-menu .taobao{
+    /*width: 74px;*/
+    display:none;
+    background-color: #fff;
+    border:1px solid #eee;
+    border-top:0 none;
+    position: absolute;
+    right:-16px;
+    top:32px;
+    z-index: 2;
+    padding: 10px;
+
+}
+
+.top-nav .quick-menu li em{
+    width: 0;
+    height: 0;
+    border:3px solid #bbb;
+    border-color: #bbb transparent transparent;
+    position: absolute;
+    right:6px;
+    top:15px;
+    transition:all .3s;
+
+}
+.top-nav .quick-menu li:hover {
+    background-color: #fff;
+}
+.top-nav .quick-menu li:hover .taobao{
+    display: block;
+}
+
+.top-nav .quick-menu li:hover em{
+    transform: rotate(180deg);
+    transform-origin: 50% 30%;
+}
+
+/*头部搜索框*/
+.header {
+    height: 130px;
+    /*background-color: pink;*/
+}
+
+
+.header .logo{
+    float: left;
+}
+
+
+.header .logo img{
+    width: 290px;
+    height: 130px;
+    margin-left: -45px;
+    /*margin-top: -166px;*/
+}
+
+.header .search{
+    float: left;
+    margin-left:106px;
+    /*width: 625px;*/
+    height: 130px;
+    /*background-color: #f00;*/
+    box-sizing: border-box;
+    padding: 38px 0px;
+
+}
+
+.header .search .topbox {
+    /*width: 100%;*/
+    height:36px;
+    border: 2px solid #c40000;
+
+}
+.header .search .topbox input{
+    float: left;
+}
+
+.header .search .topbox .box{
+    width: 500px;
+    height: 36px;
+
+}
+.header .search .topbox .btn{
+    width: 125px;
+    height: 36px;
+    background-color: #c40000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:"微软雅黑";
+    font-weight:700;
+}
+.header .search .hotquery {
+    margin-top: 10px;
+}
+.header .search .hotquery li{
+    float: left;
+    padding: 0px 10px;
+    border-left: 1px solid #ccc;
+}
+.header .search .hotquery li:first-child{
+    border-left:0 none;
+    padding-left: 0px;
+}
+
+
+/*main部分*/
+.main{
+    background-color: #f5f5f5;
+    padding-bottom: 60px;
+}
+
+/*中间内容部分*/
+
+.content{
+    position: relative;
+}
+
+.content .main-nav{
+    height: 36px;
+    line-height:36px;
+    background-color: #DD2727;
+
+}
+
+.content .main-nav .vertical-nav{
+    width: 200px;
+    height: 536px;
+    background-color: rgba(238,238,238,.95);
+    position: absolute;
+    left:2px;
+    z-index: 20;
+}
+.content .main-nav .vertical-nav li a {
+    color: #757575;
+    font-weight: 700;
+    padding-left: 30px;
+}
+.content .main-nav .vertical-nav i {
+    width:20px;
+    height: 20px;
+    display: block;
+    background:url("../imges/prolist.png") no-repeat;
+    position: absolute;
+    top:10px;
+    left:42px;
+    
+}
+.content .main-nav .vertical-nav h1{
+    width: 200px;
+    text-align: center;
+    background-color: #C60A0A;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+.content .main-nav .vertical-nav li{
+    height: 31.2px;
+    line-height:32px;
+}
+.content .main-nav .vertical-nav li:hover {
+    background-color: #fff;
+}
+
+/*移到相应的位置，显现相应的模块*/
+/*.content .main-nav .vertical-nav li:hover .prolists{*/
+    /*display: block;*/
+    /*z-index: 30;*/
+/*}*/
+.content .main-nav .vertical-nav li:hover a{
+    color: #DD2727;
+}
+
+.content .main-nav .vertical-nav .prolists {
+    width: 852px;
+    height: 500px;
+    background-color: #ccc;
+    position: absolute;
+    left:200px;
+    top:36px;
+    /*z-index: 0;*/
+    display: none;
+    opacity: 1;
+}
+
+.horizontal-nav {
+    position: absolute;
+    left: 200px;
+}
+.horizontal-nav li {
+    float: left;
+}
+
+.horizontal-nav li a{
+    color:#fff;
+    font-size: 16px;
+    font-family:"宋体";
+    font-weight:700;
+    padding: 0 14px;
+
+}
+
+/*banner部分*/
+.mainbanner {
+    position: relative;
+    height: 550px;
+    /*background-color: #F5F5F5;*/
+
+}
+
+.mainbanner .slider-banner{
+    width: 100%;
+    position: absolute;
+    /*background-color: #fff;*/
+}
+
+.mainbanner .slider-banner .bg{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: 0;
+}
+.mainbanner .slider-banner .bg1{
+    background-color: #FF89C3;
+    z-index: 1;
+}
+
+.mainbanner .slider-banner .bg2{
+    background-color: #E8E8E8;
+    z-index: 0;
+}
+.mainbanner .slider-banner .bg3{
+    background-color: #000000;
+    z-index: 0;
+}
+.mainbanner .slider-banner .bg4{
+    background-color: #E8E8E8;
+    z-index: 0;
+}
+.mainbanner .slider-banner .bg5{
+    background-color: #CC0023;
+    z-index: 0;
+}
+.mainbanner .slider-banner .bg6{
+    background-color: #CC0023;
+    z-index: 0;
+}
+.mainbanner .slider-banner .pic{
+    position: absolute;
+
+
+}
+.mainbanner .slider-banner .right-pic{
+    position: absolute;
+    right:10px;
+    top:10px;
+    /*background-color: #f00;*/
+    width: 220px;
+}
+
+.mainbanner .slider-banner .right-pic img{
+    width: 220px;
+    height: 235px;
+    margin-bottom: 8px;
+    background-color: rgba(255,255,255,.6);
+}
+
+.mainbanner .slider-banner .right-pic img:hover{
+    background-color: rgba(255,255,255,.9);
+}
+
+
+
+/*轮播图导航*/
+.mainbanner .slider-nav{
+    position: absolute;
+    bottom:60px;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%,0%);
+}
+.mainbanner .slider-nav li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url("../imges/slider-nav.png") no-repeat;
+    margin:  0 10px;
+}
+
+.mainbanner .slider-nav li.selected {
+    background-image:url("../imges/slider-nav-selected.png") ;
+}
+.mainbanner .right-vip {
+    position: absolute;
+    z-index: 20;
+    right: 35px;
+    top:10px;
+    width: 100px;
+    height: 460px;
+    padding: 10px 0px;
+    text-align: center;
+    color:#fff;
+    background-color: rgba(0,0,0,.5);
+}
+.mainbanner .right-vip .avator{
+    margin-left:15px;
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    overflow: hidden;
+    background:url("../imges/avator-default.png") no-repeat;
+    /*margin-left: 5px;*/
+
+}
+.mainbanner .right-vip .login-info{
+    height: 83px;
+    border-bottom:1px dashed #000;
+    margin-left:10px;
+    line-height: 24px;
+}
+
+.mainbanner .right-vip  a{
+    color: #fff;
+}
+.mainbanner .right-vip .login-info .login {
+    width: 80px;
+    height: 24px;
+    /*line-height: 24px;*/
+    display: block;
+    background-color: #f00;
+    border-radius:16px;
+    /*margin: 5px 0;*/
+}
+.mainbanner .right-vip .login-info a:hover{
+    text-decoration: underline;
+}
+
+
+.mainbanner .right-vip .moreinfo{
+    height: 98px;
+    margin-top:20px;
+}
+.mainbanner .right-vip .moreinfo li{
+    height: 22px;
+    line-height:22px;
+}
+.mainbanner .right-vip .moreinfo li:last-child{
+    margin-top: 10px;
+}
+
+.recommend{
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.recommend h3{
+    background-color: rgba(0,0,0,.15);
+}
+.recommend img{
+    width: 71px;
+    height: 71px;
+    border-radius:50%;
+    margin:20px 10px;
+}
+
+
+
+/*右侧固定侧栏导航*/
+.fixed_nav {
+    width: 35px;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    right:0;
+    top:0;
+    z-index: 100;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+.fixed_nav li {
+    width: 35px;
+    height: 35px;
+    background:url("../imges/charge.png") no-repeat;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.fixed_nav li:nth-child(1){
+    background-image:url("../imges/tequan.png");
+}
+
+.fixed_nav li:nth-child(2){
+    height: 100px;
+    background-image:url("../imges/charge.png");
+    padding-top: 50px;
+}
+.fixed_nav li:nth-child(3){
+    background-image:url("../imges/assetlogo.png");
+}
+.fixed_nav li:nth-child(4){
+    background-image:url("../imges/brand-logo.png");
+}
+.fixed_nav li:nth-child(5){
+    background-image:url("../imges/favor.png");
+}
+.fixed_nav li:nth-child(6){
+    background-image:url("../imges/lookedlogo.png");
+}
+.fixed_nav li:nth-child(7){
+    background-image:url("../imges/data-image-png;base… (12).png");
+}
+.fixed_nav li:nth-child(8){
+    background-image:url("../imges/data-image-png;base… (12).png");
+}
+.fixed_nav li:nth-child(9){
+    background-image:url("../imges/data-image-png;base… (12).png");
+}
+.fixed_nav li:nth-child(10){
+    background-image:url("../imges/data-image-png;base… (9).png");
+}
+
+.fixed_nav li:hover {
+    background-color: #f00;
+}
+
+
+/*品牌介绍*/
+
+.brand_intro {
+    padding-right: 35px;
+    height:436px;
+}
+.brand_intro .left-sp{
+    width: 488px;
+    height: 436px;
+    float: left;
+}
+
+.brand_intro .right-brands{
+    float: right;
+    width:726px;
+}
+.brand_intro .right-brands li{
+    width: 121px;
+    height: 108px;
+    float: left;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    position: relative;
+    transition:all 1s;
+}
+.brand_intro .right-brands li img{
+    width:101px;
+    height: 50px;
+    margin: 26px 10px;
+}
+
+li:before{
+    padding:30px 0;
+    color:#fff;
+    text-align: center;
+}
+
+.brand_intro .right-brands li:hover:before{
+    width: 100%;
+    height: 108px;
+    content:"关注人数12.1万";
+    display: block;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    
+}
+
+/*channel*/
+.channel{
+    height: 500px;
+    background-color: #F5F5F5;
+    padding-top: 40px;
+}
+.channel li {
+    float: left;
+    width: 238px;
+    height: 476px;
+    margin:0 7px;
+    text-align: center;
+    transform-style: preserve-3d;
+    background-color: #fff;
+}
+.channel li .title{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 36px;
+    line-height:36px;
+    background-color: #DD2727;
+}
+
+.channel li .intro {
+    height: 210px;
+    box-sizing: border-box;
+    margin:10px;
+
+}
+.channel .sperator {
+    width: 218px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+.channel li .intro:hover img{
+    transition:all 1s;
+    transform:perspective(100px) translateZ(10px);
+
+}
+.channel li .intro img{
+    margin-top: 10px;
+}
+.lipbanner {
+   margin-left: -140px;
+}
+
+
+.footer{
+    /*height: 560px;*/
+    border-top:1px solid #ccc;
+    margin-right: 35px;
+}
+
+.footer .ensure {
+    margin-left: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer .ensure img{
+    width: 293px;
+    height: 50px;
+    border-right:1px solid #ccc;
+    margin: 30px 0;
+
+}
+.server-help{
+    padding-left: 80px;
+    height: 190px;
+    padding-top: 20px;
+    /*background-color: #f00;*/
+    border-bottom: 2px solid #C60A0A;
+    background:url("../imges/footerbg.png") no-repeat left bottom;
+}
+.server-help dl {
+    float: left;
+    margin-top: 22px;
+    width: 200px;
+}
+
+.server-help dt {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.server-help dd {
+    height: 20px;
+}
+
+
+.footer .copyright{
+    height: 180px;
+    background-color: #000;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.footer .copyright .tminfo  a{
+    margin: 0 3px;
+    color: #fff;
+}
+
+.footer .copyright .otherlink a{
+    margin: 0 3px;
+    color: #fff;
+}
+
+.footer .copyright .btminfo{
+    color:#666;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.footer .copyright .btminfo .pics {
+    margin-top: 10px;
+}
+.footer .copyright .btminfo .pics img{
+    margin-right: 10px;
+}
